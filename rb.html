@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+			
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+
+		<!-- overwrite css -->
+		<style>
+			body {
+				padding: 10px;
+			}
+
+			/*nav*/
+			.navbar-brand {
+				padding: 5px 15px;
+				color: #fff;
+				background: #bbb;
+			}
+			.nav-stacked>li+li {
+				margin-top: 0px;
+				border-top: 1px solid #ccc;
+			}
+			.nav-pills>ul {
+				border-top: 1px solid #ccc;
+				border-right: 1px solid #ccc;
+				border-bottom: 1px solid #ccc; 
+			}
+			.nav-pills>li>a {
+				margin-bottom: 0px;
+				color: #888;
+				border-radius: 0px;
+				background: #f5f5f5;
+			}
+			.nav-pills>li.active>a {
+				color: #666;
+				background: #ddd;
+			}
+
+			/*chips*/
+			.rb-chip {
+				color: #333;
+				padding: 0 0 0 9px;
+				cursor: pointer;
+				height: 22px;
+				font-size: 12px;
+				line-height: 20px;
+				border: 1px solid #ccc;
+				border-radius: 3px;
+				margin: 4px;
+				overflow: hidden;
+				resize: none;
+				-moz-user-select: none;
+				-ms-user-select: none;
+				-webkit-user-select: none;
+				-moz-box-shadow: 0 1px 0 white;
+				-ms-box-shadow: 0 1px 0 white;
+				-webkit-box-shadow: 0 1px 0 white;
+				box-shadow: 0 1px 0 white;
+				display: inline-block;
+				background: #fff;
+			}
+			.rb-chip span {
+				vertical-align: top;
+				max-width: 150px;
+				text-overflow: ellipsis;
+				overflow: hidden;
+				white-space: nowrap;
+				display: inline-block;
+			}
+			.rb-chip .rb-delete-chip {
+				margin: 0px 3px 0 3px;
+				cursor: pointer;
+				display: inline-block;
+				background-size: auto;
+				width: 15px;
+				border-left: 1px solid #ccc;
+			}
+
+			.panel-heading.rb {
+				padding: 0px;
+			}
+		</style>
+		
+  </head>
+  <body>
+    
+    <!-- new one -->
+    <div class="panel panel-default">
+	    <div class="panel-heading rb">
+	        <a class="accordion-toggle navbar-brand" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+	          Define Population
+	        </a>
+	        <div class="navbar-collapse collapse">
+	          <span class="rb-chip" title="Yeah, Science!">
+							<span class="">Regions</span>
+							<span class="rb-delete-chip"><a class="close" data-dismiss="alert" href="#" aria-hidden="true">&times;</a></span>
+						</span>
+						<span class="rb-chip" title="Yeah, Science!">
+							<span class="">Birth Date</span>
+							<span class="rb-delete-chip"><a class="close" data-dismiss="alert" href="#" aria-hidden="true">&times;</a></span>
+						</span>
+						<span class="rb-chip" title="Yeah, Science!">
+							<span class="">Deceased</span>
+							<span class="rb-delete-chip"><a class="close" data-dismiss="alert" href="#" aria-hidden="true">&times;</a></span>
+						</span>
+						<span class="rb-chip" title="Yeah, Science!">
+							<span class="">Service Sub Category</span>
+							<span class="rb-delete-chip"><a class="close" data-dismiss="alert" href="#" aria-hidden="true">&times;</a></span>
+						</span>
+	        </div>
+	    </div>
+	    <div id="collapseOne" class="panel-collapse collapse in">
+	      <div class="panel-body">
+	        <div class="row">
+			      <ul id="myTab" class="nav nav-pills nav-stacked col-md-3">
+			        <li class="active"><a href="#home" data-toggle="tab">Communications</a></li>
+			        <li><a href="#profile" data-toggle="tab">Demography</a></li>
+			        <li><a href="#dropdown1" data-toggle="tab">Encounter</a></li>
+			        <li><a href="#dropdown2" data-toggle="tab">Geography</a></li>
+			      </ul>
+			      <div id="myTabContent" class="tab-content col-md-9">
+			        <div class="tab-pane fade in active" id="home">
+			          <div class="panel-group" id="accordion">
+								  <div class="panel panel-default">
+								    <div class="panel-heading">
+								      <h4 class="panel-title">
+								        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+								          <strong>Global Include Filters</strong>
+								        </a>
+								      </h4>
+								    </div>
+								    <div id="collapseOne" class="panel-collapse collapse in">
+								      <div class="panel-body">
+								        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+								      </div>
+								    </div>
+								  </div>
+								  <div class="panel panel-default">
+								    <div class="panel-heading">
+								      <h4 class="panel-title">
+								        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+								          <strong>Global Exclude Filters</strong>
+								        </a>
+								      </h4>
+								    </div>
+								    <div id="collapseTwo" class="panel-collapse collapse">
+								      <div class="panel-body">
+								        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+								      </div>
+								    </div>
+								  </div>
+								</div>
+			        </div>
+			        <div class="tab-pane fade" id="profile">
+			          <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.</p>
+			        </div>
+			        <div class="tab-pane fade" id="dropdown1">
+			          <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel fixie etsy retro mlkshk vice blog. Scenester cred you probably haven't heard of them, vinyl craft beer blog stumptown. Pitchfork sustainable tofu synth chambray yr.</p>
+			        </div>
+			        <div class="tab-pane fade" id="dropdown2">
+			          <p>Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR, banh mi before they sold out farm-to-table VHS viral locavore cosby sweater. Lomo wolf viral, mustache readymade thundercats keffiyeh craft beer marfa ethical. Wolf salvia freegan, sartorial keffiyeh echo park vegan.</p>
+			        </div>
+			      </div>
+			    </div>
+	      </div>
+	    </div>
+	  </div>
+    
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+      
+  </body>
+</html>
