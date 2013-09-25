@@ -112,8 +112,15 @@
 			}
 
 			/* icons */
-			.glyphicon.glyphicon-th {
-				opacity: .2;
+			.glyphicon {
+				opacity: .3;
+			}
+			.rb.glyphicon {
+				margin-left: 10px;
+			}
+			/* weird calendar form icon fix */
+			.input-group-addon.glyphicon.glyphicon-calendar {
+				top: 0px;
 			}
 		</style>
 		
@@ -128,6 +135,7 @@
 	        </a>
 	        <!-- rb chips -->
 	        <div class="navbar-collapse collapse">
+	        	<span class="rb glyphicon glyphicon-ok-circle"></span>
 	          <span class="rb-chip" title="Yeah, Science!">
 							<a class="constraint-type" href="#">Service Region</a>: <span class="constraint-summary">Primary Service Area</span>
 							<span class="rb-delete-chip"><a class="close" data-dismiss="alert" href="#" aria-hidden="true">&times;</a></span>
@@ -136,12 +144,9 @@
 							<a class="constraint-type">Birth Date</a>: <span class="constraint-summary">Ages 55-75</span>
 							<span class="rb-delete-chip"><a class="close" data-dismiss="alert" href="#" aria-hidden="true">&times;</a></span>
 						</span>
+						<span class="rb glyphicon glyphicon-remove-circle"></span>
 						<span class="rb-chip" title="Yeah, Science!">
 							<span class="">Deceased</span>
-							<span class="rb-delete-chip"><a class="close" data-dismiss="alert" href="#" aria-hidden="true">&times;</a></span>
-						</span>
-						<span class="rb-chip" title="Yeah, Science!">
-							<span class="">Service Sub Category</span>
 							<span class="rb-delete-chip"><a class="close" data-dismiss="alert" href="#" aria-hidden="true">&times;</a></span>
 						</span>
 	        </div>
@@ -248,12 +253,7 @@
 												    <a class="close" data-dismiss="alert" href="#" aria-hidden="true">&times;</a>
 												  </div>
 												</div>
-												<div class="panel panel-default">
-												  <div class="panel-body global-elements">
-												    <strong>Demography:</strong> <a href="#">Deceased</a> Individuals who are not deceased.
-												    <a class="close" data-dismiss="alert" href="#" aria-hidden="true">&times;</a>
-												  </div>
-												</div>
+												
 								      </div>
 								    </div>
 								  </div>
@@ -265,20 +265,8 @@
 								        </a>
 								      </h4>
 								    </div>
-								    <div id="collapseTwo" class="panel-collapse collapse">
+								    <div id="collapseTwo" class="panel-collapse collapse in">
 								      <div class="panel-body">
-								        <div class="panel panel-default">
-												  <div class="panel-body global-elements">
-												    <strong>Geography:</strong> <a href="#">Regions</a> Sample hospital.
-												    <a class="close" data-dismiss="alert" href="#" aria-hidden="true">×</a>
-												  </div>
-												</div>
-												<div class="panel panel-default">
-												  <div class="panel-body global-elements">
-												    <strong>Demography:</strong> <a href="#">Birth Date</a> Individuals who are between the ages of 55 and 75.
-												    <a class="close" data-dismiss="alert" href="#" aria-hidden="true">×</a>
-												  </div>
-												</div>
 												<div class="panel panel-default">
 												  <div class="panel-body global-elements">
 												    <strong>Demography:</strong> <a href="#">Deceased</a> Individuals who are not deceased.
