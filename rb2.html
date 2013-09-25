@@ -112,8 +112,11 @@
 			}
 
 			/* icons */
-			.glyphicon.glyphicon-th {
-				opacity: .2;
+			.glyphicon {
+				opacity: .3;
+			}
+			.rb.glyphicon {
+				margin-left: 10px;
 			}
 			/* weird calendar form icon fix */
 			.input-group-addon.glyphicon.glyphicon-calendar {
@@ -132,20 +135,17 @@
 	        </a>
 	        <!-- rb chips -->
 	        <div class="navbar-collapse collapse">
+	        	<span class="rb glyphicon glyphicon-ok-circle"></span>
 	          <span class="rb-chip" title="Yeah, Science!">
-							<a class="constraint-type" href="#">Service Region</a>: <span class="constraint-summary">Primary Service Area</span>
+							<a class="constraint-type" href="#">Start Date</a>: <span class="constraint-summary">01/01/2013</span>
 							<span class="rb-delete-chip"><a class="close" data-dismiss="alert" href="#" aria-hidden="true">&times;</a></span>
 						</span>
 						<span class="rb-chip" title="Yeah, Science!">
-							<a class="constraint-type">Birth Date</a>: <span class="constraint-summary">Ages 55-75</span>
+							<a class="constraint-type">End Date</a>: <span class="constraint-summary">05/01/2013</span>
 							<span class="rb-delete-chip"><a class="close" data-dismiss="alert" href="#" aria-hidden="true">&times;</a></span>
 						</span>
 						<span class="rb-chip" title="Yeah, Science!">
-							<span class="">Deceased</span>
-							<span class="rb-delete-chip"><a class="close" data-dismiss="alert" href="#" aria-hidden="true">&times;</a></span>
-						</span>
-						<span class="rb-chip" title="Yeah, Science!">
-							<span class="">Service Sub Category</span>
+							<a class="constraint-type" href="#">Cost Per Piece</a>: <span class="constraint-summary">$1.50</span>
 							<span class="rb-delete-chip"><a class="close" data-dismiss="alert" href="#" aria-hidden="true">&times;</a></span>
 						</span>
 	        </div>
@@ -159,17 +159,18 @@
 			      	<div class="panel panel-default">
 				      	<div class="panel-body">
 						      <form class="form-horizontal" role="form">
+						      	<legend>Time</legend>
 									  <div class="form-group">
 									    <label for="inputEmail1" class="col-lg-3 control-label">Start Date</label>
 									    <div class="col-lg-9 input-group">
-									      <input type="date" class="form-control" id="inputStartdate" placeholder="Start Date">
+									      <input type="date" class="form-control" id="inputStartdate" value="2013-01-01">
 									      <span class="input-group-addon glyphicon glyphicon-calendar"></span>
 									    </div>
 									  </div>
 									  <div class="form-group">
 									    <label for="inputPassword1" class="col-lg-3 control-label">End Date</label>
 									    <div class="col-lg-9 input-group">
-									      <input type="date" class="form-control" id="inputEnddate">
+									      <input type="date" class="form-control" id="inputEnddate" value="2013-05-01">
 									      <span class="input-group-addon glyphicon glyphicon-calendar"></span>
 									    </div>
 									  </div>
@@ -182,11 +183,12 @@
 			      	<div class="panel panel-default">
 				      	<div class="panel-body">
 						      <form class="form-horizontal" role="form">
+				      			<legend>Drop</legend>
 									  <div class="form-group">
 									    <label for="inputCost1" class="col-lg-4 control-label">Cost Per Piece</label>
 									    <div class="col-lg-8 input-group">
 									    	<span class="input-group-addon">$</span>
-									      <input type="text" class="form-control" id="inputCost" placeholder="0.00">
+									      <input type="text" class="form-control" id="inputCost" placeholder="1.50">
 									    </div>
 									  </div>
 									  <div class="form-group">
@@ -207,6 +209,7 @@
 			      	<div class="panel panel-default">
 				      	<div class="panel-body">
 						      <form class="form-horizontal" role="form">
+				      			<legend>Goal</legend>
 									  <div class="form-group">
 									    <label for="inputDiagnosis1" class="col-lg-3 control-label">Diagnosis</label>
 									    <div class="col-lg-9">
