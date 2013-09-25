@@ -114,11 +114,11 @@
 	        <!-- rb chips -->
 	        <div class="navbar-collapse collapse">
 	          <span class="rb-chip" title="Yeah, Science!">
-							<span class="">Regions</span>
+							<a class="constraint-type" href="#">Service Region</a>: <span class="constraint-summary">Primary Service Area</span>
 							<span class="rb-delete-chip"><a class="close" data-dismiss="alert" href="#" aria-hidden="true">&times;</a></span>
 						</span>
 						<span class="rb-chip" title="Yeah, Science!">
-							<span class="">Birth Date</span>
+							<a class="constraint-type">Birth Date</a>: <span class="constraint-summary">Ages 55-75</span>
 							<span class="rb-delete-chip"><a class="close" data-dismiss="alert" href="#" aria-hidden="true">&times;</a></span>
 						</span>
 						<span class="rb-chip" title="Yeah, Science!">
@@ -135,10 +135,78 @@
 	      <div class="panel-body">
 	        <div class="row">
 			      <ul id="myTab" class="nav nav-pills nav-stacked col-md-3">
-			        <li class="active"><a href="#home" data-toggle="tab">Communications</a></li>
-			        <li><a href="#profile" data-toggle="tab">Demography</a></li>
-			        <li><a href="#dropdown1" data-toggle="tab">Encounter</a></li>
-			        <li><a href="#dropdown2" data-toggle="tab">Geography</a></li>
+			        <li class="active panel-group">
+			        	<a href="#home" data-toggle="tab">Communications</a>
+			        </li>
+			        <li class="panel-group">
+			        	<a href="#profile" data-toggle="tab">Demography</a>
+			          <div class="panel-body">
+			          	<div class="panel panel-default">
+									  <div class="panel-body global-elements">
+									    Birth Date
+									  </div>
+									</div>
+			          	<div class="panel panel-default">
+									  <div class="panel-body global-elements">
+									    Gender
+									  </div>
+									</div>
+			          	<div class="panel panel-default">
+									  <div class="panel-body global-elements">
+									    Recency/Frequency
+									  </div>
+									</div>
+			          	<div class="panel panel-default">
+									  <div class="panel-body global-elements">
+									    Perceptual Profile
+									  </div>
+									</div>
+			          </div>
+			        </li>
+			        <li class="panel-group">
+			        	<a href="#dropdown1" data-toggle="tab">
+			        		Encounter
+			        	</a>
+			          <div class="panel-body">
+			          	<div class="panel panel-default">
+				          	<div class="panel-body global-elements">
+				          		Service Line
+				          	</div>
+				          </div>
+				          <div class="panel panel-default">
+				          	<div class="panel-body global-elements">
+				          		Diagnosis
+				          	</div>
+				          </div>
+				          <div class="panel panel-default">
+				          	<div class="panel-body global-elements">
+				          		Procedure
+				          	</div>
+			          	</div>
+			          </div>
+			        </li>
+			        <li class="panel-group">
+			        	<a href="#dropdown2" data-toggle="tab">
+			        		Geography
+			        	</a>
+			        	<div class="panel-body">
+			          	<div class="panel panel-default">
+				          	<div class="panel-body global-elements">
+				          		Service Region
+				          	</div>
+				          </div>
+				          <div class="panel panel-default">
+				          	<div class="panel-body global-elements">
+				          		ZIP Code
+				          	</div>
+				          </div>
+				          <div class="panel panel-default">
+				          	<div class="panel-body global-elements">
+				          		State
+				          	</div>
+			          	</div>
+			          </div>
+			        </li>
 			      </ul>
 			      <div id="myTabContent" class="tab-content col-md-9">
 			        <div class="tab-pane fade in active" id="home">
